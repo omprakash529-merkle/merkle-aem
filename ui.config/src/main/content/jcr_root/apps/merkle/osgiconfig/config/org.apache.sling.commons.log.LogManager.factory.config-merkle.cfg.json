@@ -1,0 +1,5 @@
+{
+  "org.apache.sling.commons.log.names": ["com.merkle"],
+  "org.apache.sling.commons.log.level": "info",
+  "org.apache.sling.commons.log.file": "logs/merkle.log"
+}
