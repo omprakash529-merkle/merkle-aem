@@ -1,0 +1,13 @@
+/farms {
+  /merkle {
+    /clientheaders { "$include" "../clientheaders/default_clientheaders.any" }
+    /virtualhosts { "$include" "../virtualhosts/merkle_virtualhosts.any" }
+    /renders { "$include" "../renders/default_renders.any" }
+    /filter { "$include" "../filters/merkle_filters.any" }
+    /cache {
+      /docroot "${DOCROOT}"
+      /rules { "$include" "../cache/merkle_cache.any" }
+      /allowedTypes { "$include" "../cache/default_invalidate.any" }
+    }
+  }
+}

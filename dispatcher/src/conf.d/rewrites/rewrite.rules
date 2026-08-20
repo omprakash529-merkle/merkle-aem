@@ -1,0 +1,3 @@
+# Strip .html for author-friendly URLs handled at EDS; classic AEM keeps .html.
+# Example: force https (handled at CDN in AEMaaCS; kept for local dispatcher parity)
+RewriteRule ^/?$ /content/merkle.html [PT,L]

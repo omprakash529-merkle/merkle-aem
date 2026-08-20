@@ -1,0 +1,13 @@
+/* Merkle site styles — compiled into the clientlib */
+:root {
+  --merkle-navy: #243976;
+  --merkle-gold: #a3855e;
+}
+
+body {
+  font-family: 'DM Sans', system-ui, sans-serif;
+}
+
+.cmp-helloworld__title {
+  color: var(--merkle-navy);
+}

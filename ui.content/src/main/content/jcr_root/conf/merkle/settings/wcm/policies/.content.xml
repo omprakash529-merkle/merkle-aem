@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    jcr:primaryType="nt:unstructured">
+    <wcm jcr:primaryType="nt:unstructured">
+        <core jcr:primaryType="nt:unstructured">
+            <components jcr:primaryType="nt:unstructured">
+                <page jcr:primaryType="nt:unstructured">
+                    <v3 jcr:primaryType="nt:unstructured">
+                        <page jcr:primaryType="nt:unstructured">
+                            <merkle-page-policy jcr:primaryType="nt:unstructured"
+                                jcr:title="Merkle Page Policy"
+                                sling:resourceType="wcm/core/components/policies/policy"/>
+                        </page>
+                    </v3>
+                </page>
+            </components>
+        </core>
+    </wcm>
+    <merkle jcr:primaryType="nt:unstructured">
+        <components jcr:primaryType="nt:unstructured">
+            <container jcr:primaryType="nt:unstructured">
+                <default jcr:primaryType="nt:unstructured"
+                    jcr:title="Merkle Container Policy"
+                    sling:resourceType="wcm/core/components/policies/policy"
+                    components="[merkle/components/helloworld,core/wcm/components/text/v2/text,core/wcm/components/image/v3/image,core/wcm/components/title/v3/title]"/>
+            </container>
+        </components>
+    </merkle>
+</jcr:root>

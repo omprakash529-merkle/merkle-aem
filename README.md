@@ -15,7 +15,12 @@ Sample AEMaaCS Maven project (archetype-style), scaffolded as a reference/starte
 | `ui.apps` | application | Immutable `/apps` — components (HTL), clientlibs |
 | `ui.config` | application | OSGi run-mode configuration |
 | `ui.content` | content | Mutable `/content`, `/conf` — sample page, templates |
-| `all` | container | Embeds all modules for a single deployable artifact |
+| `ui.apps.structure` | container | Repository-structure package: owns the /apps + /conf filter roots |
+| `ui.frontend` | jar | Webpack + TypeScript + SCSS build → `merkle.site` clientlib into ui.apps |
+| `dispatcher` | pom/zip | AEMaaCS dispatcher.cloud config (vhosts, farms, filters, cache) |
+| `it.tests` | jar | HTTP integration tests (failsafe, aem-cloud-testing-clients) |
+| `ui.tests` | pom | End-to-end UI tests (Cypress) for the Cloud Manager UI-testing step |
+| `all` | container | Embeds all deployable modules into one artifact |
 
 ## What's included as a reference
 - `HelloWorldModel` — Sling Model (`@Model` on Resource, `@ValueMapValue`, `@Self`, `@PostConstruct`).

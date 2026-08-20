@@ -27,6 +27,12 @@
                     <embeddeds>
                         <embedded>
                             <groupId>com.merkle</groupId>
+                            <artifactId>merkle-aem.ui.apps.structure</artifactId>
+                            <type>zip</type>
+                            <target>/apps/merkle-packages/application/install</target>
+                        </embedded>
+                        <embedded>
+                            <groupId>com.merkle</groupId>
                             <artifactId>merkle-aem.core</artifactId>
                             <target>/apps/merkle-packages/application/install</target>
                         </embedded>
@@ -55,6 +61,12 @@
     </build>
 
     <dependencies>
+        <dependency>
+            <groupId>com.merkle</groupId>
+            <artifactId>merkle-aem.ui.apps.structure</artifactId>
+            <version>${project.version}</version>
+            <type>zip</type>
+        </dependency>
         <dependency>
             <groupId>com.merkle</groupId>
             <artifactId>merkle-aem.core</artifactId>

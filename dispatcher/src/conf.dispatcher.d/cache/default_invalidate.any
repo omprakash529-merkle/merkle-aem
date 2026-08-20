@@ -1,0 +1,7 @@
+/allowedTypes {
+  "GET"
+  "HEAD"
+  "POST"
+  "PUT"
+  "DELETE"
+}

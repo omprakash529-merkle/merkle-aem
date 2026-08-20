@@ -1,0 +1,4 @@
+/rules {
+  /0000 { /glob "*" /type "allow" }
+  /0001 { /glob "/content/merkle/*.html" /type "allow" }
+}

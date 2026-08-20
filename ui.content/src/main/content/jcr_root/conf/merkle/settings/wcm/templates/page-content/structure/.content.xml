@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:template="/conf/merkle/settings/wcm/templates/page-content"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Page Content"
+        sling:resourceType="merkle/components/page"
+        cq:responsive="{Boolean}true">
+        <root jcr:primaryType="nt:unstructured"
+              sling:resourceType="merkle/components/container"
+              cq:responsive="{Boolean}true"
+              editable="{Boolean}true">
+            <cq:responsive jcr:primaryType="nt:unstructured">
+                <default jcr:primaryType="nt:unstructured" width="{Long}12" offset="{Long}0"/>
+            </cq:responsive>
+        </root>
+    </jcr:content>
+</jcr:root>
